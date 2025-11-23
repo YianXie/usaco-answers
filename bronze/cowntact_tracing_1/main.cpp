@@ -40,11 +40,10 @@ bool simulate(vector<int> arr, int k)
             }
         }
 
-        if (c1 == 1 && cowRecord[c1Idx] <= k) {
+        if (c1 == 1 && cowRecord[c1Idx] <= k)
             c2 = 1;
-        } else if (c2 == 1 && cowRecord[c2Idx] <= k) {
+        else if (c2 == 1 && cowRecord[c2Idx] <= k)
             c1 = 1;
-        }
     }
 
     for (int i = 0; i < n; ++i) {
@@ -101,10 +100,9 @@ int main()
         if (results[i] == 0)
             continue;
 
+        vector<int> arr(n, 0);
+        arr[i] = 1;
         for (int k = 0; k <= t; ++k) {
-            vector<int> arr(n, 0);
-            arr[i] = 1;
-
             if (simulate(arr, k)) {
                 validZeros.insert(i);
             }

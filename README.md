@@ -1,3 +1,3 @@
-# usaco-answers
+# Usaco Solutions
 
-My personal answers to some of the USACO questions
+My personal solution to some of the USACO questions
